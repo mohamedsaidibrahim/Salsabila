@@ -1,6 +1,8 @@
 {
   "en": {
     "appName": "Salsabila",
+    "seoTitle": "Salsabila",
+    "seoDescription": "Salsabila - Your All-in-One Islamic App",
     "home": "Home",
     "features": "Features",
     "screenshots": "Screenshots",
@@ -47,6 +49,8 @@
   },
   "ar": {
     "appName": "سلسبيلا",
+    "seoTitle": "سلسبيلا",
+    "seoDescription": "سلسبيلا - تطبيقك الإسلامي الشامل",
     "home": "الرئيسية",
     "features": "الميزات",
     "screenshots": "لقطات الهاتف",
