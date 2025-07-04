@@ -1,46 +1,177 @@
 /* assets/css/sections.css */
 
+/* --- Hero Carousel --- */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* 80% of viewport height */
+  overflow: hidden; /* Crucial to clip slides outside the view */
+  display: block; /* Ensures it behaves like a standard block element */
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  position: relative; /* Essential for absolute positioning of .carousel-slide children */
+}
+
+.carousel-slide {
+  position: absolute; /* Take slides out of normal flow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s; /* Transition both properties */
+  pointer-events: none; /* Ensure non-active slides don't interfere with clicks/interactions */
+  background-color: #eee; /* Fallback background if image fails to load */
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; /* Allow interaction on active slide */
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops images to cover the area without distortion */
+  display: block; /* Remove any potential extra space below images */
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%; /* Make controls span full width to position buttons */
+  display: flex;
+  justify-content: space-between; /* Push buttons to ends */
+  transform: translateY(-50%);
+  z-index: 20; /* Ensure controls are above slides and floating buttons */
+  padding: 0 10px; /* Add some padding from edges */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.carousel-controls button {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Slightly darker for better visibility */
+  color: white;
+  border: none;
+  padding: 15px 20px; /* Larger hit area */
+  cursor: pointer;
+  font-size: 28px; /* Larger arrows */
+  border-radius: 50%; /* Make them round */
+  transition: background-color 0.3s ease;
+  display: flex; /* For perfect centering of the arrow */
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* Adjust line height for icon centering */
+}
+
+.carousel-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Download Buttons Floating */
+.download-buttons-floating {
+  position: absolute;
+  bottom: 30px; /* Slightly higher from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Make sure it's above slides but below controls */
+  display: flex;
+  gap: 25px; /* More space between buttons */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center buttons if they wrap */
+  max-width: 90%; /* Limit width to ensure it doesn't overflow */
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* A bit more space between icon and text */
+  padding: 18px 35px; /* Larger padding */
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2em; /* Slightly larger text */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+.download-btn.app-store {
+  background-color: #007aff;
+}
+
+.download-btn img {
+  width: 35px; /* Larger icons */
+  height: 35px;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-3px); /* Slight lift effect */
+}
+.download-btn.app-store:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* --- App Description Section --- */
+.app-description-section {
+  padding: 80px 0; /* More vertical padding */
+  text-align: center;
+  background-color: #ffffff; /* Explicit white background */
+}
+
 .app-info-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px; /* More space below header */
 }
 
 .app-logo {
-  width: 120px;
-  height: 120px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  width: 150px; /* Larger logo */
+  height: 150px;
+  border-radius: 30px; /* More rounded */
+  margin-bottom: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More prominent shadow */
 }
 
 .app-description-section h2 {
-  font-size: 2.5em;
-  color: #333;
-  margin-bottom: 20px;
+  font-size: 3em; /* Larger heading */
+  color: #2c3e50; /* Darker, more professional color */
+  margin-bottom: 25px;
 }
 
-/* App Description */
 .app-description-section p {
-  font-size: 1.1em;
+  font-size: 1.2em; /* Larger text for readability */
   line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto 30px;
-  color: #555;
+  max-width: 900px; /* Wider text block */
+  margin: 0 auto 50px; /* More margin below paragraph */
+  color: #444;
 }
 
 .why-choose-salsabila {
-  margin-top: 40px;
-  background-color: #f9f9f9;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  background-color: #f5fafd; /* Lighter background for this box */
+  padding: 40px; /* More padding */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .why-choose-salsabila h3 {
-  font-size: 1.8em;
+  font-size: 2.2em; /* Larger heading */
   color: #28a745;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .why-choose-salsabila ul {
@@ -49,182 +180,150 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px; /* More space between items */
 }
 
 .why-choose-salsabila ul li {
-  background-color: #fff;
-  padding: 15px 25px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  padding: 20px 30px; /* More padding */
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
   font-size: 1.1em;
-  color: #444;
-  flex: 1 1 auto; /* Allows items to grow/shrink */
-  max-width: 45%; /* Two items per row on larger screens */
+  color: #555;
+  flex: 1 1 calc(50% - 25px); /* Adjusted for gap, two items per row */
+  box-sizing: border-box; /* Include padding in width calculation */
   text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.why-choose-salsabila ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 768px) {
   .why-choose-salsabila ul li {
-    max-width: 100%; /* One item per row on small screens */
+    flex: 1 1 100%; /* One item per row on small screens */
+    max-width: 100%;
   }
 }
 
-/* Hero Carousel */
-.hero-carousel {
-  position: relative;
-  width: 100%;
-  height: 80vh; /* Adjust as needed */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.carousel-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.carousel-slide.active {
-  opacity: 1;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.carousel-controls button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  z-index: 10;
-  font-size: 24px;
-  border-radius: 5px;
-}
-
-.carousel-controls .prev-btn {
-  left: 10px;
-}
-.carousel-controls .next-btn {
-  right: 10px;
-}
-
-/* Key Features */
+/* --- Key Features Section --- */
 .key-features-section {
-  padding: 60px 0;
-  background-color: #f0f8ff; /* Light blue background */
+  padding: 80px 0;
+  background-color: #eaf7ff; /* Slightly different light blue */
   text-align: center;
 }
 
 .key-features-section h2 {
-  font-size: 2.5em;
-  color: #333;
-  margin-bottom: 40px;
+  font-size: 3em;
+  color: #2c3e50;
+  margin-bottom: 60px; /* More space below heading */
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 40px; /* More space between cards */
   justify-content: center;
 }
 
 .feature-card {
   background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* More padding */
+  border-radius: 12px; /* Slightly more rounded */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px); /* More pronounced lift */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
 .feature-icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
+  width: 70px; /* Larger icons */
+  height: 70px;
+  margin-bottom: 25px;
 }
 
 .feature-card h3 {
-  font-size: 1.5em;
+  font-size: 1.8em; /* Larger heading */
   color: #28a745;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .feature-card p {
-  font-size: 1em;
+  font-size: 1.1em; /* Larger text */
   color: #666;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-.app-description-section {
-  padding: 60px 0;
-  text-align: center;
-}
-
-/* Screenshots */
+/* --- Screenshots Section --- */
 .screenshots-section {
-  padding: 60px 0;
+  padding: 80px 0;
   text-align: center;
-  background-color: #fff;
+  background-color: #fcfcfc; /* Very light gray */
 }
 
 .screenshots-section h2 {
-  font-size: 2.5em;
-  color: #333;
-  margin-bottom: 40px;
+  font-size: 3em;
+  color: #2c3e50;
+  margin-bottom: 60px;
 }
 
 .screenshots-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Use flexbox for flexibility */
+  flex-wrap: wrap; /* Allow wrapping */
   justify-content: center;
-  gap: 30px;
+  gap: 30px; /* Space between cards */
+  max-width: 1200px; /* Limit width */
+  margin: 0 auto; /* Center the grid */
 }
 
 .screenshot-card {
-  background-color: #f9f9f9;
-  border-radius: 10px;
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Fixed width for card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px); /* Approx 3 cards per row, adjusting for gap */
+  max-width: 320px; /* Max width for individual card */
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.screenshot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .screenshot-card img {
   width: 100%;
-  height: auto;
+  height: auto; /* Maintain aspect ratio */
   display: block;
   border-bottom: 1px solid #eee;
 }
 
 .screenshot-card p {
-  padding: 15px;
-  font-size: 0.95em;
+  padding: 20px; /* More padding */
+  font-size: 1em;
   color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .screenshot-card {
+    width: calc(50% - 20px); /* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .screenshot-card {
+    width: 100%; /* 1 card per row on mobile */
+    max-width: 350px; /* Constrain single card width */
+  }
 }
 
 /* Contact Form */
@@ -312,156 +411,112 @@
   color: #721c24;
 }
 
-/* Download Buttons */
-.download-buttons-floating {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
-  display: flex;
-  gap: 20px;
-}
-
-.download-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 30px;
-  background-color: #4caf50; /* Green for Play Store */
-  color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 1.1em;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.download-btn.app-store {
-  background-color: #007aff; /* Blue for App Store */
-}
-
-.download-btn img {
-  width: 30px;
-  height: 30px;
-}
-
-.download-btn:hover {
-  background-color: #45a049;
-}
-.download-btn.app-store:hover {
-  background-color: #0056b3;
-}
-
-
 /* Download Section */
 .download-section {
-    padding: 60px 0;
-    text-align: center;
-    background-color: #f0f8ff;
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f0f8ff;
 }
 
 .download-section h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
 }
 
 .download-options {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .download-button {
-    display: flex;
-    align-items: center;
-    padding: 20px 40px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-width: 280px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 280px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .download-button img {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
 }
 
 .download-button .small-text {
-    font-size: 0.9em;
-    display: block;
+  font-size: 0.9em;
+  display: block;
 }
 
 .download-button .main-text {
-    font-size: 1.5em;
-    display: block;
+  font-size: 1.5em;
+  display: block;
 }
 
 .play-store-btn {
-    background-color: #4CAF50; /* Google Play green */
+  background-color: #4caf50; /* Google Play green */
 }
 
 .app-store-btn {
-    background-color: #007AFF; /* Apple App Store blue */
+  background-color: #007aff; /* Apple App Store blue */
 }
 
 .download-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .play-store-btn:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .app-store-btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-
-
-/* assets/css/main.css */
+/* Site Footer */
 .site-footer {
-    background-color: #333;
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    font-size: 0.9em;
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.9em;
 }
 
 .site-footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .site-footer p {
-    margin: 0;
+  margin: 0;
 }
 
 .social-links {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .social-links span {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .social-links a img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
 }
 
 .social-links a img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }

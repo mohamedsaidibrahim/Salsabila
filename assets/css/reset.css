@@ -1,0 +1,78 @@
+/* assets/css/reset.css */
+
+/* Box sizing defaults to border-box for easier layout calculations */
+html {
+  box-sizing: border-box;
+  font-size: 16px; /* Base font size */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font family and line height */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Smoother fonts on macOS */
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ol[class],
+ul[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a {
+  text-decoration: none; /* Remove underline by default */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and scroll-behavior for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
