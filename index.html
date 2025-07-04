@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-translate="seoTitle">
+      Salsabila App - Your All-in-One Islamic Companion
+    </title>
+    <meta name="author" content="Mohamed Said Ibrahim" />
+    <meta
+      name="description"
+      data-translate="seoDescription"
+      content="Download Salsabila, the free, ad-free Islamic app for prayer times, Quran, Qibla, Duas, and more. Available on Google Play & App Store."
+    />
+    <meta
+      name="keywords"
+      content="Salsabila, Islamic app, Prayer Times, Quran, Qibla, Duas, Azkar, Muslim app, free Islamic app, ad-free, Ramadan, Eid"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://yourusername.github.io/salsabila-app/"
+    />
+    <meta
+      property="og:title"
+      data-translate="seoTitle"
+      content="Salsabila App - Your All-in-One Islamic Companion"
+    />
+    <meta
+      property="og:description"
+      data-translate="seoDescription"
+      content="Download Salsabila, the free, ad-free Islamic app for prayer times, Quran, Qibla, Duas, and more. Available on Google Play & App Store."
+    />
+    <meta
+      property="og:image"
+      content="https://yourusername.github.io/salsabila-app/assets/img/social_share_image.jpg"
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://yourusername.github.io/salsabila-app/"
+    />
+    <meta
+      property="twitter:title"
+      data-translate="seoTitle"
+      content="Salsabila App - Your All-in-One Islamic Companion"
+    />
+    <meta
+      property="twitter:description"
+      data-translate="seoDescription"
+      content="Download Salsabila, the free, ad-free Islamic app for prayer times, Quran, Qibla, Duas, and more. Available on Google Play & App Store."
+    />
+    <meta
+      property="twitter:image"
+      content="https://yourusername.github.io/salsabila-app/assets/img/social_share_image.jpg"
+    />
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <title>Salsabila - Your Islamic Companion</title>
+    <h1 data-translate="appDescriptionTitle"></h1>
+    <p id="app-description-text"></p>
+    <input type="email" data-translate-placeholder="yourEmail" />
+
+    <div class="language-switcher">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('ar')">العربية</button>
+      <button onclick="setLanguage('de')">Deutsch</button>
+      <button onclick="setLanguage('fr')">Français</button>
+      <button onclick="setLanguage('es')">Español</button>
+      <button onclick="setLanguage('it')">Italiano</button>
+      <button onclick="setLanguage('ru')">Русский</button>
+      <button onclick="setLanguage('fa')">فارسی</button>
+      <button onclick="setLanguage('ur')">اردو</button>
+      <button onclick="setLanguage('tr')">Türkçe</button>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="assets/img/logo.png" alt="Salsabila App Logo" />
+          <span data-translate="appName">Salsabila</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home" data-translate="home">Home</a></li>
+          <li><a href="#features" data-translate="features">Features</a></li>
+          <li>
+            <a href="#screenshots" data-translate="screenshots">Screenshots</a>
+          </li>
+          <li><a href="#download" data-translate="download">Download</a></li>
+          <li><a href="#contact" data-translate="contact">Contact</a></li>
+          <li class="language-selector">
+            <div class="dropdown">
+              <button class="dropbtn" id="current-language-btn">
+                <img
+                  id="current-language-flag"
+                  src="assets/img/icons/flag_en.png"
+                  alt="English Flag"
+                />
+                <span id="current-language-label">English</span>
+                &#9662;
+              </button>
+              <div class="dropdown-content" id="language-options"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero-carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide active">
+          <img
+            src="assets/img/carousel/hero1.jpg"
+            alt="Salsabila App Screenshot 1"
+          />
+        </div>
+        <div class="carousel-slide">
+          <img
+            src="assets/img/carousel/hero2.jpg"
+            alt="Salsabila App Screenshot 2"
+          />
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+      </div>
+      <div class="download-buttons-floating">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.donet.salsabila"
+          target="_blank"
+          class="download-btn play-store"
+        >
+          <img src="assets/img/icons/playstore.png" alt="Google Play Store" />
+          <span data-translate="playStore">Google Play</span>
+        </a>
+        <a href="#" target="_blank" class="download-btn app-store">
+          <img src="assets/img/icons/appstore.png" alt="Apple App Store" />
+          <span data-translate="appStore">App Store</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="app-description-section">
+      <div class="container">
+        <div class="app-info-header">
+          <img
+            src="assets/img/logo.png"
+            alt="Salsabila App Logo"
+            class="app-logo"
+          />
+          <h2 data-translate="appDescriptionTitle"></h2>
+        </div>
+        <p id="app-description-text"></p>
+        <div class="why-choose-salsabila">
+          <h3 data-translate="whyChooseTitle">Why Choose Salsabila?</h3>
+          <ul id="why-choose-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="key-features-section">
+      <div class="container">
+        <h2 data-translate="keyFeaturesTitle"></h2>
+        <div class="features-grid" id="key-features-container"></div>
+      </div>
+    </section>
+
+    <section id="screenshots" class="screenshots-section">
+      <div class="container">
+        <h2 data-translate="screenshotsTitle">App Screenshots</h2>
+        <div class="screenshots-grid">
+          <div class="screenshot-card">
+            <img
+              src="assets/img/screenshots/screen1.png"
+              alt="Salsabila App Screenshot 1"
+            />
+            <p data-translate="screenshot1Desc">
+              Main dashboard with prayer times.
+            </p>
+          </div>
+          <div class="screenshot-card">
+            <img
+              src="assets/img/screenshots/screen2.png"
+              alt="Salsabila App Screenshot 2"
+            />
+            <p data-translate="screenshot2Desc">Quran reader interface.</p>
+          </div>
+          <div class="screenshot-card">
+            <img
+              src="assets/img/screenshots/screen3.png"
+              alt="Salsabila App Screenshot 3"
+            />
+            <p data-translate="screenshot3Desc">Qibla compass in action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 data-translate="contactUsTitle"></h2>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="user-email" data-translate="yourEmailLabel"
+              >Your Email:</label
+            >
+            <input
+              type="email"
+              id="user-email"
+              name="user_email"
+              required
+              data-translate-placeholder="yourEmail"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message-title" data-translate="messageTitleLabel"
+              >Message Title:</label
+            >
+            <input
+              type="text"
+              id="message-title"
+              name="message_title"
+              required
+              data-translate-placeholder="messageTitle"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message-content" data-translate="messageContentLabel"
+              >Message Content:</label
+            >
+            <textarea
+              id="message-content"
+              name="message_content"
+              rows="6"
+              required
+              data-translate-placeholder="messageContent"
+            ></textarea>
+          </div>
+          <button type="submit" data-translate="send">Send Message</button>
+          <p id="form-message" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="download" class="download-section">
+      <div class="container">
+        <h2 data-translate="downloadAppSectionTitle">
+          Download Salsabila App Now!
+        </h2>
+        <div class="download-options">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.donet.salsabila"
+            target="_blank"
+            class="download-button large-button play-store-btn"
+          >
+            <img src="assets/img/icons/playstore.png" alt="Google Play Store" />
+            <div>
+              <span class="small-text" data-translate="getItOn">Get it on</span>
+              <span class="main-text" data-translate="playStore"
+                >Google Play</span
+              >
+            </div>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            class="download-button large-button app-store-btn"
+          >
+            <img src="assets/img/icons/appstore.png" alt="Apple App Store" />
+            <div>
+              <span class="small-text" data-translate="downloadOn"
+                >Download on the</span
+              >
+              <span class="main-text" data-translate="appStore">App Store</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="copyright-year"></span>
+          <span data-translate="appName">Salsabila</span>.
+          <span data-translate="allRightsReserved">All Rights Reserved.</span>
+        </p>
+        <div class="social-links">
+          <span data-translate="followUs">Follow Us On:</span>
+          <a href="https://facebook.com/salsabilaapp" target="_blank"
+            ><img src="assets/img/icons/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://linkedin.com/company/salsabilaapp" target="_blank"
+            ><img src="assets/img/icons/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href="https://instagram.com/salsabilaapp" target="_blank"
+            ><img src="assets/img/icons/instagram.png" alt="Instagram"
+          /></a>
+          <a href="https://twitter.com/salsabilaapp" target="_blank"
+            ><img src="assets/img/icons/x.png" alt="X (Twitter)"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      // Initialize EmailJS with your public key
+      // This should be outside the module script if you import emailjs from CDN
+      // Or, handle initialization inside contactForm.js if you bundle it
+      document.addEventListener("DOMContentLoaded", function () {
+        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS Public Key
+      });
+    </script>
+  </body>
+</html>

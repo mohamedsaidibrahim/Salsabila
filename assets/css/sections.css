@@ -1,0 +1,467 @@
+/* assets/css/sections.css */
+
+.app-info-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.app-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.app-description-section h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* App Description */
+.app-description-section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #555;
+}
+
+.why-choose-salsabila {
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-salsabila h3 {
+  font-size: 1.8em;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.why-choose-salsabila ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.why-choose-salsabila ul li {
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  font-size: 1.1em;
+  color: #444;
+  flex: 1 1 auto; /* Allows items to grow/shrink */
+  max-width: 45%; /* Two items per row on larger screens */
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .why-choose-salsabila ul li {
+    max-width: 100%; /* One item per row on small screens */
+  }
+}
+
+/* Hero Carousel */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Adjust as needed */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-controls button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.carousel-controls .prev-btn {
+  left: 10px;
+}
+.carousel-controls .next-btn {
+  right: 10px;
+}
+
+/* Key Features */
+.key-features-section {
+  padding: 60px 0;
+  background-color: #f0f8ff; /* Light blue background */
+  text-align: center;
+}
+
+.key-features-section h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.5em;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.app-description-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Screenshots */
+.screenshots-section {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.screenshots-section h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.screenshots-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.screenshot-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Fixed width for card */
+  text-align: center;
+}
+
+.screenshot-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.screenshot-card p {
+  padding: 15px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Contact Form */
+.contact-section {
+  padding: 60px 0;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  display: block;
+  margin: 30px auto 0;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.form-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.form-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Download Buttons */
+.download-buttons-floating {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background-color: #4caf50; /* Green for Play Store */
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn.app-store {
+  background-color: #007aff; /* Blue for App Store */
+}
+
+.download-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+.download-btn.app-store:hover {
+  background-color: #0056b3;
+}
+
+
+/* Download Section */
+.download-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.download-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.download-button {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 280px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.download-button img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.download-button .small-text {
+    font-size: 0.9em;
+    display: block;
+}
+
+.download-button .main-text {
+    font-size: 1.5em;
+    display: block;
+}
+
+.play-store-btn {
+    background-color: #4CAF50; /* Google Play green */
+}
+
+.app-store-btn {
+    background-color: #007AFF; /* Apple App Store blue */
+}
+
+.download-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.play-store-btn:hover {
+    background-color: #45a049;
+}
+
+.app-store-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* assets/css/main.css */
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-links span {
+    margin-right: 10px;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
