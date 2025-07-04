@@ -1,9 +1,15 @@
 {
   "en": {
     "appName": "Salsabila",
+    "home": "Home",
+    "features": "Features",
+    "screenshots": "Screenshots",
+    "download": "Download",
+    "contact": "Contact",
     "downloadApp": "Download App",
     "playStore": "Google Play",
     "appStore": "App Store",
+    "whyChooseTitle": "Why Choose Salsabila?",
     "appDescriptionTitle": "🌙 Download Salsabila – Your All-in-One Islamic App 🌟",
     "keyFeaturesTitle": "Key Features",
     "contactUsTitle": "Contact Us",
@@ -41,6 +47,11 @@
   },
   "ar": {
     "appName": "سلسبيلا",
+    "home": "الرئيسية",
+    "features": "الميزات",
+    "screenshots": "لقطات الهاتف",
+    "download": "تنزيل",
+    "contact": "تواصل معنا",
     "downloadApp": "حمل التطبيق",
     "playStore": "جوجل بلاي",
     "appStore": "ابل ستور",

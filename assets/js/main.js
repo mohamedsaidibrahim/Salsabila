@@ -23,16 +23,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   const currentLangLabel = document.getElementById("current-language-label");
 
   const languages = [
-    { code: "en", label: "English", flag: "flag_en.png" },
-    { code: "ar", label: "العربية", flag: "flag_ar.png" },
-    { code: "de", label: "Deutsch", flag: "flag_de.png" },
-    { code: "fr", label: "Français", flag: "flag_fr.png" },
-    { code: "es", label: "Español", flag: "flag_es.png" },
-    { code: "it", label: "Italiano", flag: "flag_it.png" },
-    { code: "ru", label: "Русский", flag: "flag_ru.png" },
-    { code: "fa", label: "فارسی", flag: "flag_fa.png" },
-    { code: "ur", label: "اردو", flag: "flag_ur.png" },
-    { code: "tr", label: "Türkçe", flag: "flag_tr.png" },
+    { code: "en", label: "English", flag: "flag_en.svg" },
+    { code: "ar", label: "العربية", flag: "flag_ar.svg" },
+    { code: "de", label: "Deutsch", flag: "flag_de.svg" },
+    { code: "fr", label: "Français", flag: "flag_fr.svg" },
+    { code: "es", label: "Español", flag: "flag_es.svg" },
+    { code: "it", label: "Italiano", flag: "flag_it.svg" },
+    { code: "ru", label: "Русский", flag: "flag_ru.svg" },
+    { code: "fa", label: "فارسی", flag: "flag_fa.svg" },
+    { code: "ur", label: "اردو", flag: "flag_ur.svg" },
+    { code: "tr", label: "Türkçe", flag: "flag_tr.svg" },
   ];
 
   if (langOptionsContainer) {

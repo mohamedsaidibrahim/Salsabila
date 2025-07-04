@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salsabila is a comprehensive, ad-free Islamic app offering prayer times, Quran, Qibla, Azkar, Ruqyah, and more. Download now from Google Play or App Store." />
+  <meta name="keywords" content="Islamic app, Salsabila, Quran app, Prayer times, Azkar, Muslim app, Qibla, Ruqyah, Adhan, Islamic calendar" />
+  <meta name="author" content="Mohamed Said Ibrahim" />
+  <title>Salsabila – Your All-in-One Islamic Companion</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0275d8;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .language-switcher {
+      text-align: center;
+      margin: 1rem;
+    }
+    .language-switcher button {
+      margin: 0.2rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #ddd;
+      cursor: pointer;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .features {
+      text-align: left;
+      margin: 2rem 0;
+    }
+    .features h2 {
+      color: #0275d8;
+    }
+    .features ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    .cta {
+      margin: 2rem 0;
+    }
+    .cta a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 1rem 2rem;
+      background-color: #0275d8;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .cta a:hover {
+      background-color: #025aa5;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Salsabila</h1>
+    <p id="intro">Your All-in-One Islamic App – Free, Ad-Free, and Always with You</p>
+  </header>
+
+  <div class="language-switcher">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ar')">العربية</button>
+    <button onclick="setLanguage('de')">Deutsch</button>
+    <button onclick="setLanguage('fr')">Français</button>
+    <button onclick="setLanguage('es')">Español</button>
+    <button onclick="setLanguage('it')">Italiano</button>
+    <button onclick="setLanguage('ru')">Русский</button>
+    <button onclick="setLanguage('fa')">فارسی</button>
+    <button onclick="setLanguage('ur')">اردو</button>
+    <button onclick="setLanguage('tr')">Türkçe</button>
+  </div>
+
+  <section class="content">
+    <div class="features">
+      <h2 id="features-title">Key Features:</h2>
+      <ul id="features-list">
+        <li>Accurate prayer times & Adhan alerts</li>
+        <li>Qibla direction finder</li>
+        <li>Full Quran with audio recitations & translations</li>
+        <li>Daily Duas, Azkar, and Ruqyah for healing</li>
+        <li>Hijri calendar with Islamic occasions</li>
+        <li>Live Makkah and Madinah broadcasts</li>
+        <li>Simple Tasbeeh counter</li>
+        <li>Beautiful, easy-to-use interface</li>
+      </ul>
+    </div>
+
+    <div class="cta">
+      <h2 id="download-heading">Download Salsabila Today</h2>
+      <a href="https://play.google.com/store/apps/details?id=com.donet.salsabila" target="_blank" id="download-android">Get it on Google Play</a>
+      <a href="#" onclick="alert('iOS version coming soon. Stay tuned!'); return false;" id="download-ios">Coming to App Store</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Mohamed Said Ibrahim | Salsabila App. All rights reserved.
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        intro: "Your All-in-One Islamic App – Free, Ad-Free, and Always with You",
+        featuresTitle: "Key Features:",
+        features: [
+          "Accurate prayer times & Adhan alerts",
+          "Qibla direction finder",
+          "Full Quran with audio recitations & translations",
+          "Daily Duas, Azkar, and Ruqyah for healing",
+          "Hijri calendar with Islamic occasions",
+          "Live Makkah and Madinah broadcasts",
+          "Simple Tasbeeh counter",
+          "Beautiful, easy-to-use interface"
+        ],
+        downloadHeading: "Download Salsabila Today",
+        android: "Get it on Google Play",
+        ios: "Coming to App Store"
+      },
+      ar: {
+        intro: "تطبيق إسلامي شامل - مجاني وبدون إعلانات، معك دائمًا",
+        featuresTitle: "المميزات الرئيسية:",
+        features: [
+          "مواقيت الصلاة الدقيقة وتنبيهات الأذان",
+          "تحديد اتجاه القبلة",
+          "القرآن الكريم كامل بالتلاوات والترجمات",
+          "الأذكار اليومية والرقية الشرعية",
+          "التقويم الهجري والمناسبات الإسلامية",
+          "بث مباشر من مكة والمدينة",
+          "عداد تسبيح بسيط",
+          "واجهة سهلة الاستخدام وجميلة"
+        ],
+        downloadHeading: "قم بتحميل تطبيق سلسبيلا الآن",
+        android: "حمّل من Google Play",
+        ios: "قريبًا على App Store"
+      },
+      // Additional translations for other languages will be inserted here following SRP.
+    };
+
+    function setLanguage(lang) {
+      const t = translations[lang];
+      if (!t) return;
+      document.getElementById('intro').textContent = t.intro;
+      document.getElementById('features-title').textContent = t.featuresTitle;
+      const list = document.getElementById('features-list');
+      list.innerHTML = '';
+      t.features.forEach(f => {
+        const li = document.createElement('li');
+        li.textContent = f;
+        list.appendChild(li);
+      });
+      document.getElementById('download-heading').textContent = t.downloadHeading;
+      document.getElementById('download-android').textContent = t.android;
+      document.getElementById('download-ios').textContent = t.ios;
+    }
+  </script>
+</body>
+</html>
