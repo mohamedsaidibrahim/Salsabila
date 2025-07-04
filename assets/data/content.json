@@ -2,33 +2,97 @@
   "en": {
     "appDescription": "Looking for a complete Islamic app that helps you stay connected to your faith — anytime, anywhere? \n\nSalsabila is your daily Islamic companion, designed to support your spiritual journey with all the tools you need in one elegant, ad-free platform ...",
     "featuresList": [
-      {"icon": "prayer.png", "title": "Accurate Prayer Times", "description": "Customizable Adhan alerts."},
-      {"icon": "qibla.png", "title": "Precise Qibla Direction", "description": "Wherever you are."},
-      {"icon": "quran.png", "title": "Full Holy Quran", "description": "With audio recitations & translations."},
-      {"icon": "ruqyah.png", "title": "Powerful Ruqyah", "description": "Quran-based spiritual healing."},
-      {"icon": "duas.png", "title": "Daily Duas and Azkar", "description": "For every occasion."},
-      {"icon": "calendar.png", "title": "Hijri & Islamic Calendar", "description": "With key dates (Ramadan, Eid, etc.)."},
-      {"icon": "makkah.png", "title": "Live Makkah & Madinah broadcasts", "description": "Stay connected to the holy cities."},
-      {"icon": "tasbeeh.png", "title": "Beautifully designed Tasbeeh counter", "description": "Track your dhikr easily."}
+      {
+        "icon": "prayer.svg",
+        "title": "Accurate Prayer Times",
+        "description": "Customizable Adhan alerts."
+      },
+      {
+        "icon": "qibla.svg",
+        "title": "Precise Qibla Direction",
+        "description": "Wherever you are."
+      },
+      {
+        "icon": "quran.svg",
+        "title": "Full Holy Quran",
+        "description": "With audio recitations & translations."
+      },
+      {
+        "icon": "ruqyah.svg",
+        "title": "Powerful Ruqyah",
+        "description": "Quran-based spiritual healing."
+      },
+      {
+        "icon": "duas.svg",
+        "title": "Daily Duas and Azkar",
+        "description": "For every occasion."
+      },
+      {
+        "icon": "calendar.svg",
+        "title": "Hijri & Islamic Calendar",
+        "description": "With key dates (Ramadan, Eid, etc.)."
+      },
+      {
+        "icon": "makkah.svg",
+        "title": "Live Makkah & Madinah broadcasts",
+        "description": "Stay connected to the holy cities."
+      },
+      {
+        "icon": "tasbeeh.svg",
+        "title": "Beautifully designed Tasbeeh counter",
+        "description": "Track your dhikr easily."
+      }
     ],
     "whyChooseSalsabila": [
-      "100% Free",
-      "No Ads – Ever",
-      "Simple, elegant, and easy-to-use",
-      "Developed by Muslims, for Muslims"
+      "💯 100% Free",
+      "🚫 No Ads – Ever",
+      "📜๋࣭ Simple, elegant, and easy-to-use",
+      "☝🏼 Developed by Muslims, for Muslims"
     ]
   },
   "ar": {
     "appDescription": "هل تبحث عن تطبيق إسلامي كامل يساعدك على البقاء على اتصال بإيمانك - في أي وقت وفي أي مكان؟ السبسبيلة هو رفيقك الإسلامي اليومي، المصمم لدعم رحلتك الروحية بجميع الأدوات التي تحتاجها في منصة واحدة أنيقة وخالية من الإعلانات. 🕌 الميزات الرئيسية: ✅ أوقات صلاة دقيقة وتنبيهات أذان قابلة للتخصيص...",
     "featuresList": [
-      {"icon": "prayer.png", "title": "أوقات صلاة دقيقة", "description": "مع تنبيهات أذان قابلة للتخصيص."},
-      {"icon": "qibla.png", "title": "تحديد دقيق للقبلة", "description": "أينما كنت."},
-      {"icon": "quran.png", "title": "القرآن الكريم كاملاً", "description": "مع تلاوات صوتية وترجمات."},
-      {"icon": "ruqyah.png", "title": "رقية قوية", "description": "علاج روحي قائم على القرآن."},
-      {"icon": "duas.png", "title": "أدعية وأذكار يومية", "description": "لكل مناسبة."},
-      {"icon": "calendar.png", "title": "التقويم الهجري والإسلامي", "description": "مع تواريخ رئيسية (رمضان، عيد، إلخ)."},
-      {"icon": "makkah.png", "title": "بث مباشر لمكة والمدينة", "description": "ابق على اتصال بالمدينتين المقدستين."},
-      {"icon": "tasbeeh.png", "title": "عداد تسبيح مصمم بشكل جميل", "description": "تتبع ذكرك بسهولة."}
+      {
+        "icon": "prayer.svg",
+        "title": "أوقات صلاة دقيقة",
+        "description": "مع تنبيهات أذان قابلة للتخصيص."
+      },
+      {
+        "icon": "qibla.svg",
+        "title": "تحديد دقيق للقبلة",
+        "description": "أينما كنت."
+      },
+      {
+        "icon": "quran.svg",
+        "title": "القرآن الكريم كاملاً",
+        "description": "مع تلاوات صوتية وترجمات."
+      },
+      {
+        "icon": "ruqyah.svg",
+        "title": "رقية قوية",
+        "description": "علاج روحي قائم على القرآن."
+      },
+      {
+        "icon": "duas.svg",
+        "title": "أدعية وأذكار يومية",
+        "description": "لكل مناسبة."
+      },
+      {
+        "icon": "calendar.svg",
+        "title": "التقويم الهجري والإسلامي",
+        "description": "مع تواريخ رئيسية (رمضان، عيد، إلخ)."
+      },
+      {
+        "icon": "makkah.svg",
+        "title": "بث مباشر لمكة والمدينة",
+        "description": "ابق على اتصال بالمدينتين المقدستين."
+      },
+      {
+        "icon": "tasbeeh.svg",
+        "title": "عداد تسبيح مصمم بشكل جميل",
+        "description": "تتبع ذكرك بسهولة."
+      }
     ],
     "whyChooseSalsabila": [
       "مجاني 100%",
