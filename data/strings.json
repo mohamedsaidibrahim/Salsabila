@@ -29,7 +29,15 @@
     "formError": "Failed to send message. Please try again.",
     "downloadAppSectionTitle": "Download Salsabila App Now!",
     "getItOn": "Get it on",
-    "downloadOn": "Download on the"
+    "downloadOn": "Download on the",
+    "feature1": "Accurate prayer times & Adhan alerts",
+    "feature2": "Qibla direction finder",
+    "feature3": "Full Quran with audio recitations & translations",
+    "feature4": "Daily Duas, Azkar, and Ruqyah for healing",
+    "feature5": "Hijri calendar with Islamic occasions",
+    "feature6": "Live Makkah and Madinah broadcasts",
+    "feature7": "Simple Tasbeeh counter",
+    "feature8": "Beautiful, easy-to-use interface"
   },
   "ar": {
     "appName": "سلسبيلا",
@@ -56,7 +64,15 @@
     "formError": "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.",
     "downloadAppSectionTitle": "حمل تطبيق السسبيلة الآن!",
     "getItOn": "احصل عليه من",
-    "downloadOn": "حمله من"
+    "downloadOn": "حمله من",
+    "feature1": "مواقيت الصلاة الدقيقة وتنبيهات الأذان",
+    "feature2": "تحديد اتجاه القبلة",
+    "feature3": "القرآن الكريم كامل بالتلاوات والترجمات",
+    "feature4": "الأذكار اليومية والرقية الشرعية",
+    "feature5": "التقويم الهجري والمناسبات الإسلامية",
+    "feature6": "بث مباشر من مكة والمدينة",
+    "feature7": "عداد تسبيح بسيط",
+    "feature8": "واجهة سهلة الاستخدام وجميلة"
   },
   "de": {
     "appName": "Salsabila",
