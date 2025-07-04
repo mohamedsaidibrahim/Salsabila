@@ -137,6 +137,7 @@ function applyTranslations() {
   updateWhyChooseSalsabila();
 
   // Update dynamic text for download buttons (if applicable, assuming they have data-translate)
+  document.getElementById('play-store-download-text').textContent = getTranslation('playStore');
   document.getElementById("play-store-download-text").textContent =
     getTranslation("playStore");
   document.getElementById("app-store-download-text").textContent =

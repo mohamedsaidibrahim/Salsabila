@@ -57,9 +57,9 @@
       content="https://yourusername.github.io/salsabila-app/assets/img/social_share_image.jpg"
     />
 
-    <link rel="stylesheet" href="assets/css/components.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/sections.css" />
 
     <script
@@ -138,13 +138,28 @@
             href="https://play.google.com/store/apps/details?id=com.donet.salsabila"
             target="_blank"
             class="download-btn play-store"
+            aria-label="Download on Google Play"
           >
             <img src="assets/img/icons/playstore.svg" alt="Google Play Store" />
-            <span data-translate="playStore">Google Play</span>
+            <div class="text-content">
+              <span id="download-get-it-on-hero" data-translate="getItOn"
+                >GET IT ON</span
+              >
+              <span id="play-store-download-text-hero" data-translate="playStore"
+                >Google Play</span
+              >
+            </div>
           </a>
           <a href="#" target="_blank" class="download-btn app-store">
             <img src="assets/img/icons/appstore.svg" alt="Apple App Store" />
-            <span data-translate="appStore">App Store</span>
+            <div class="text-content">
+              <span id="download-on-the-hero" data-translate="downloadOn"
+                >Download on the</span
+              >
+              <span id="app-store-download-text-hero" data-translate="appStore"
+                >App Store</span
+              >
+            </div>
           </a>
         </div>
       </section>
@@ -163,27 +178,7 @@
           <div class="why-choose-salsabila">
             <h3 data-translate="whyChooseTitle">Why Choose Salsabila?</h3>
             <ul id="why-choose-list">
-              <li data-translate="feature1">
-                ✅ Accurate prayer times & Adhan alerts
-              </li>
-              <li data-translate="feature2">✅ Qibla direction finder</li>
-              <li data-translate="feature3">
-                ✅ Full Quran with audio recitations & translations
-              </li>
-              <li data-translate="feature4">
-                ✅ Daily Duas, Azkar, and Ruqyah for healing
-              </li>
-              <li data-translate="feature5">
-                ✅ Hijri calendar with Islamic occasions
-              </li>
-              <li data-translate="feature6">
-                ✅ Live Makkah and Madinah broadcasts
-              </li>
-              <li data-translate="feature7">✅ Simple Tasbeeh counter</li>
-              <li data-translate="feature8">
-                ✅ Beautiful, easy-to-use interface
-              </li>
-            </ul>
+              </ul>
           </div>
         </div>
       </section>
@@ -309,7 +304,7 @@
 
       <section id="download" class="download-section">
         <div class="container">
-          <h2 data-translate="downloadAppSectionTitle">
+          <h2 id="download-section-title" data-translate="downloadAppSectionTitle">
             Download Salsabila App Now!
           </h2>
           <div class="download-options">
@@ -323,10 +318,10 @@
                 alt="Google Play Store"
               />
               <div>
-                <span class="small-text" data-translate="getItOn"
+                <span id="download-get-it-on" class="small-text" data-translate="getItOn"
                   >Get it on</span
                 >
-                <span class="main-text" data-translate="playStore"
+                <span id="play-store-download-text" class="main-text" data-translate="playStore"
                   >Google Play</span
                 >
               </div>
@@ -338,10 +333,10 @@
             >
               <img src="assets/img/icons/appstore.svg" alt="Apple App Store" />
               <div>
-                <span class="small-text" data-translate="downloadOn"
+                <span id="download-on-the" class="small-text" data-translate="downloadOn"
                   >Download on the</span
                 >
-                <span class="main-text" data-translate="appStore"
+                <span id="app-store-download-text" class="main-text" data-translate="appStore"
                   >App Store</span
                 >
               </div>
@@ -356,10 +351,14 @@
         <p>
           &copy; <span id="copyright-year"></span>
           <span data-translate="appName">Salsabila</span>.
-          <span data-translate="allRightsReserved">All Rights Reserved.</span>
+          <span id="all-rights-reserved-text" data-translate="allRightsReserved"
+            >All Rights Reserved.</span
+          >
         </p>
         <div class="social-links">
-          <span data-translate="followUs">Follow Us On:</span>
+          <span id="follow-us-text" data-translate="followUs"
+            >Follow Us On:</span
+          >
           <a href="https://facebook.com/salsabilaapp" target="_blank"
             ><img src="assets/img/icons/facebook.svg" alt="Facebook"
           /></a>
@@ -375,17 +374,16 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="assets/js/main.js"></script>
+
     <script type="module" src="assets/js/localization.js"></script>
     <script type="module" src="assets/js/carousel.js"></script>
     <script type="module" src="assets/js/contactForm.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    
     <script type="text/javascript">
       // Initialize EmailJS with your public key
-      // This should be outside the module script if you import emailjs from CDN
       document.addEventListener("DOMContentLoaded", function () {
-        // Only initialize EmailJS if the SDK has been loaded
         if (typeof emailjs !== "undefined" && emailjs.init) {
-          emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS Public Key
           emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS Public Key
         } else {
           console.error("EmailJS SDK not found or not initialized.");
