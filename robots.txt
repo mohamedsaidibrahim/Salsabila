@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mohamedsaidibrahim.github.io/Salsabila/sitemap.xml
